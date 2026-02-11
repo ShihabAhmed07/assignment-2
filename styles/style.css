@@ -28,6 +28,17 @@
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
+    gap: 4px;
+    align-items: center;
+}
+
+.btn-primary:hover{
+    background: linear-gradient(100deg, #FB09B4, #9100F8, #F7E93F);
+    filter: drop-shadow(0 0 10px #f7e83f5c);
+}
+
+header{
+    width: 100%;
 }
 
 /* nav bar related styles */
@@ -59,5 +70,84 @@
 
 .list-item a{
     text-decoration: none;
-    color: #fff;1
+    color: #fff;
 }
+/* banner related styles */
+.img-3{
+    border-top: 1px solid lightgrey;
+}
+
+.img-3 img{
+     width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.image-container{
+    position: relative;
+}
+
+.img-1{
+    position: absolute;
+    right: 615px;
+    top: 100px;
+}
+
+.img-2{
+    position: absolute;
+    right: 731px;
+    top: 178px;
+}
+.banner{
+    position: relative;
+}
+.banner-title{
+    position: absolute;
+    right: 650px;
+    top: 490px;
+    font-size: 3.8rem;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+
+}
+
+.banner-description{
+    position: absolute;
+    right: 520px;
+    top: 572px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+
+.spotify{
+    position: absolute;
+    right: 790px;
+    top: 625px;
+}
+
+.sub{
+    background-color: transparent;
+    border: 1px solid #00FF88;
+    color: #00FF88;
+    padding: 12px 25px;
+    border-radius: 1000px;
+    gap: 6px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.sub{
+    position: absolute;
+    right: 640px;
+    top: 627px;
+}
+.sub:hover{
+    background-color: rgba(127, 255, 212, 0.39);
+    filter: drop-shadow(0 0 10px #00FF88);
+}
+/* end of banner section */
+
