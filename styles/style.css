@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.inter-fonts {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* shared styles */
+
+.display-item{
+    display: flex;
+}
+
+.btn-primary{
+    color: #fff;
+    padding: 13px 16px;
+    border: none;
+    border-radius: 1000px;
+    background: linear-gradient(-106deg, #F7E93F, #FB09B4, #9100F8);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* nav bar related styles */
+.nav-bar{
+    background-color: #1A0B2E;
+    justify-content: space-between;
+    padding: 24px 200px;
+    align-items: center;
+}
+
+
+
+.nav-item{
+    color: #fff;
+    gap: 32px;
+    list-style: none;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.brand{
+    color: #fff;
+}
+/* wave gradient color problem */
+.brand .wave{
+   color: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
+}
+/* wave gradient section end */
+
+.list-item a{
+    text-decoration: none;
+    color: #fff;1
+}
