@@ -37,8 +37,24 @@
     filter: drop-shadow(0 0 10px #f7e83f5c);
 }
 
+.section-title{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+.c-paragraph{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+}
+
 header{
     width: 100%;
+}
+
+main>section{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* nav bar related styles */
@@ -74,7 +90,7 @@ header{
 }
 /* banner related styles */
 .img-3{
-    border-top: 1px solid lightgrey;
+    border-top: 0.3px solid rgba(255, 255, 255, 0.484);
 }
 
 .img-3 img{
@@ -151,3 +167,47 @@ header{
 }
 /* end of banner section */
 
+/* about related styles */
+main{
+    background-color: #1A0B2E;
+    color: #fff;
+
+}
+
+.about{
+    
+}
+
+.about-description{
+    margin-top: 16px;
+    text-align: center;
+}
+
+.about-bottom{
+    margin-top: 25px;
+    margin-bottom: 160px;
+    text-align: center;
+}
+.about-rating{
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    border-top: 0.5px solid rgba(211, 211, 211, 0.443);
+    padding-top: 80px;
+}
+.rating{
+    color: #00FF88;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.rating-details{
+    justify-content: space-between;
+    align-items: center;
+}
+.details{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    padding-bottom: 120px;
+}
