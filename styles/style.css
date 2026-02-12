@@ -80,6 +80,19 @@ header {
     font-size: 1rem;
 }
 
+.brand .wave {
+    font-size: 4rem;
+    font-weight: 700;
+    background: linear-gradient(-360deg, #F7E93F, #FB09B4, #9100F8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.brand h2 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
 .brand {
     color: #fff;
 }
@@ -121,6 +134,33 @@ header {
     position: absolute;
     right: 731px;
     top: 178px;
+}
+
+.badge {
+    text-align: center;
+    background-color: #00FF88;
+    border: none;
+    border-radius: 1000px;
+    padding: 8px 16px;
+    max-width: 75px;
+    color: #1A0B2E;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+
+.badge-container {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    right: 635px;
+    top: -625px;
+}
+
+.badge:hover {
+    filter: brightness(#00FF88);
 }
 
 .banner {
@@ -258,7 +298,8 @@ main {
     border: none;
     border-radius: 40px
 }
-.premium{
+
+.premium {
     transition: 0.4s ease;
 }
 
@@ -386,131 +427,157 @@ main {
     font-size: 1rem;
     font-weight: 400;
 }
+
 /* hover effect */
-.premium:hover{
+.premium:hover {
     transform: scale(1.04);
 }
-.mobile:hover{
+
+.mobile:hover {
     transform: scale(1.04);
 }
-.global:hover{
+
+.global:hover {
     transform: scale(1.04);
 }
-.exclusive:hover{
+
+.exclusive:hover {
     transform: scale(1.04);
 }
-.rich:hover{
+
+.rich:hover {
     transform: scale(1.04);
 }
+
 /* feature related style */
-.padd{
+.padd {
     padding-top: 120px;
 }
-.feature{
+
+.feature {
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 40px;
     padding-bottom: 120px;
 }
 
-.video-card{
+.video-card {
     gap: 30px;
 }
 
-.video-card>div{
+.video-card>div {
     flex: 1 1 320px;
     max-width: 380px
 }
 
-.video-card iframe{
+.video-card iframe {
     width: 100%;
     height: 225px;
     border-radius: 24px 24px 0 0;
 }
 
-.video-1st, .video-2nd, .video-3rd{
+.video-1st,
+.video-2nd,
+.video-3rd {
     background-color: #250D44;
     border: none;
     border-radius: 24px 24px 24px 24px;
     transition: 0.4s ease;
 }
 
-.video-1st-text, .video-2nd-text, .video-3rd-text{
-      padding: 24px;
-      color: #fff;
+.video-1st-text,
+.video-2nd-text,
+.video-3rd-text {
+    padding: 24px;
+    color: #fff;
 }
 
-.video-caption-1, .video-caption-2, .video-caption-3{
+.video-caption-1,
+.video-caption-2,
+.video-caption-3 {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 12px;
 }
 
-.video-details-1, .video-details-2, .video-details-3{
+.video-details-1,
+.video-details-2,
+.video-details-3 {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     margin-bottom: 12px;
 }
 
-.video-time-1st, .video-time-2nd, .video-time-3rd{
+.video-time-1st,
+.video-time-2nd,
+.video-time-3rd {
     font-weight: 600;
     color: #00FF88;
     gap: 6px;
     align-items: center;
 }
 
-.video-1st:hover{
+.video-1st:hover {
     transform: scale(1.04);
 }
-.video-2nd:hover{
+
+.video-2nd:hover {
     transform: scale(1.04);
 }
-.video-3rd:hover{
+
+.video-3rd:hover {
     transform: scale(1.04);
 }
+
 /* host-related styles*/
-.host{
+.host {
     padding-bottom: 120px;
 }
-.alex-detail-pic{
+
+.alex-detail-pic {
     max-width: 1200px;
     margin: 0 auto;
     gap: 24px;
     align-items: center;
     justify-content: center;
 }
-.alex-detail-pic{
+
+.alex-detail-pic {
     background-color: #35116566;
-    border:  none;
+    border: none;
     border-radius: 40px;
     padding: 40px;
     margin-top: 40px;
 }
-.alex-details{
+
+.alex-details {
     color: #fff;
 }
-.name{
+
+.name {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 16px;
 }
-.alex-about{
+
+.alex-about {
     line-height: 1.5;
     margin-bottom: 16px;
 }
-.social-icon{
+
+.social-icon {
     gap: 10px;
-    
+
 }
 
 .icon-1,
 .icon-2,
 .icon-3,
-.icon-4{
+.icon-4 {
     padding: 15px;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
     max-width: 40px;
     border: 1px solid #533C72;
     border-radius: 50%;
@@ -520,28 +587,98 @@ main {
 }
 
 
-.social-icon img{
+.social-icon img {
     width: 20px;
     height: 20px;
 }
 
-.icon-1:hover{
+.icon-1:hover {
     background: linear-gradient(45deg, #f7e83f22, #fb09b21d, #9100f823);
     filter: drop-shadow(0 0 8px #9100f831);
     transform: scale(1.04);
 }
-.icon-2:hover{
+
+.icon-2:hover {
     background: linear-gradient(45deg, #f7e83f22, #fb09b21d, #9100f823);
     filter: drop-shadow(0 0 8px #9100f831);
     transform: scale(1.04);
 }
-.icon-3:hover{
+
+.icon-3:hover {
     background: linear-gradient(45deg, #f7e83f22, #fb09b21d, #9100f823);
     filter: drop-shadow(0 0 8px #9100f831);
     transform: scale(1.04);
 }
-.icon-4:hover{
+
+.icon-4:hover {
     background: linear-gradient(45deg, #f7e83f22, #fb09b21d, #9100f823);
     filter: drop-shadow(0 0 8px #9100f831);
     transform: scale(1.04);
+}
+
+/* footer related style */
+
+.brand-name {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.brand-foot {
+    position: absolute;
+    right: 365px;
+    top: -350px;
+}
+
+.wave-foot {
+    font-size: 6rem;
+    font-weight: 700;
+    background: linear-gradient(-360deg, #F7E93F, #FB09B4, #9100F8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.brand-foot h2 {
+    font-size: 6rem;
+    font-weight: 700;
+    color: #fff;
+}
+.bg-foot-img img{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.footer-details{
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    gap: 40px;
+}
+
+.footer-details-container{
+    position: relative;
+}
+
+.footer-details{
+    position: absolute;
+    top: -195px;
+    right: 530px;
+}
+
+.spotify-2, .apple, .youtube, .twitter{
+    gap: 8px;
+}
+.copy{
+    color: #fff;
+}
+.copy-container{
+    position: relative;
+}
+.copy{
+    position: absolute;
+    top: -130px;
+    right: 600px;
 }
