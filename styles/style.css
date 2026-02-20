@@ -724,5 +724,59 @@ main {
 /* small devices */
 
 @media screen and (max-width: 576px) {
-   
+   .nav-bar{
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
+   }
+
+   .circle{
+    width: 250px;
+   }
+
+   .mic{
+    width: 90px;
+   }
+
+   .btn-banner{
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .about-rating,
+   .rating-details{
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+   }
+
+   .choose{
+    grid-template-columns: repeat(1fr);
+   }
+   .video-card{
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: repeat(1fr);
+   }
+
+   .brand-foot,
+   .footer-details,
+   .copy{
+        position: static;
+   }
+
+   .footer-all{
+    width: 100%;
+   }
+
+   .footer-details{
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 24px;
+   }
+
+   .copy{
+    margin-top: 24px;
+   }
 }
