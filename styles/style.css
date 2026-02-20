@@ -110,92 +110,98 @@ header {
 }
 
 /* banner related styles */
-.img-3 {
-    border-top: 0.3px solid rgba(255, 255, 255, 0.484);
-}
+.banner{
+    background-image: url('../assets/hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-.img-3 img {
-    width: 100%;
-    object-fit: cover;
-    display: block;
-}
+    min-height: 100vh;
+    padding: 80px 20px;
 
-.image-container {
-    position: relative;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-.img-1 {
-    position: absolute;
-    right: 615px;
-    top: 100px;
-}
-
-.img-2 {
-    position: absolute;
-    right: 731px;
-    top: 178px;
-}
-
-.badge {
     text-align: center;
+    color: #fff;
+
+    border-top: 0.5px solid lightgrey;
+
+    overflow: hidden;
+}
+
+.banner > * {
+    position: relative;
+    z-index: 1;
+}
+
+.img-circle-mic{
+    position: relative;
+    margin-bottom: 40px;
+    padding-bottom: 100px;
+}
+.circle{
+    width: 420px;
+}
+
+.mic{
+    position: absolute;
+    top: 20%;
+    right:33%;
+    width: 140px;
+}
+.btn-banner{
+    margin-top: 24px;
+    gap: 10px;
+}
+
+.badge{
+    text-align: center;
+    justify-items: center;
     background-color: #00FF88;
     border: none;
     border-radius: 1000px;
-    padding: 8px 16px;
+    padding: 8px 18px;
     max-width: 75px;
     color: #1A0B2E;
     font-size: 1.2rem;
     font-weight: 600;
-
-}
-
-.badge-container {
-    position: relative;
-}
-
-.badge {
-    position: absolute;
-    right: 635px;
-    top: -625px;
-}
-
-.badge:hover {
-    filter: brightness(#00FF88);
-}
-
-.banner {
-    position: relative;
-}
-
-.banner-title {
-    position: absolute;
-    right: 650px;
-    top: 490px;
-    font-size: 3.8rem;
-    font-weight: 800;
-    color: #fff;
     text-align: center;
 
 }
 
-.banner-description {
+.badge{
     position: absolute;
-    right: 520px;
-    top: 572px;
+    top: -1500%;
+    right: 5%;
+}
+
+.badge:hover{
+    filter: brightness(#00ff88);
+}
+
+.banner-title {
+    font-size: 3.8rem;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 14px;
+
+}
+
+.banner-description {
     font-size: 1rem;
     font-weight: 400;
     color: #fff;
     text-align: center;
 }
 
-.spotify {
-    position: absolute;
-    right: 790px;
-    top: 625px;
-}
 
 .sub {
     background-color: transparent;
+    align-items: center;
     border: 1px solid #00FF88;
     color: #00FF88;
     padding: 12px 25px;
@@ -207,12 +213,6 @@ header {
 
 }
 
-.sub {
-    position: absolute;
-    right: 640px;
-    top: 627px;
-}
-
 .sub:hover {
     background-color: rgba(127, 255, 212, 0.39);
     filter: drop-shadow(0 0 10px #00ff8821);
@@ -222,6 +222,9 @@ header {
 /* end of banner section */
 
 /* about related styles */
+.about{
+    padding-top: 50px;
+}
 .bg-about {
     background-color: #1A0B2E;
     color: #fff;
@@ -235,6 +238,9 @@ main {
 .about-description {
     margin-top: 16px;
     text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 16px;
 }
 
 .about-bottom {
@@ -430,23 +436,23 @@ main {
 
 /* hover effect */
 .premium:hover {
-    transform: scale(1.04);
+    transform: scale(1.01);
 }
 
 .mobile:hover {
-    transform: scale(1.04);
+    transform: scale(1.01);
 }
 
 .global:hover {
-    transform: scale(1.04);
+    transform: scale(1.01);
 }
 
 .exclusive:hover {
-    transform: scale(1.04);
+    transform: scale(1.01);
 }
 
 .rich:hover {
-    transform: scale(1.04);
+    transform: scale(1.01);
 }
 
 /* feature related style */
@@ -618,18 +624,68 @@ main {
 
 /* footer related style */
 
-.brand-name {
-    position: relative;
-    max-width: 1200px;
+.footer{
+    background-image: url('../assets/footer-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    min-height: 50vh;
+    padding: 80px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: #fff;
+
+    overflow: hidden;
     margin: 0 auto;
 }
 
-.brand-foot {
+.footer>*{
+    position: relative;
+    z-index: 1;
+}
+.footer-all{
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.brand-foot{
     position: absolute;
-    right: 365px;
-    top: -350px;
+    top: -50%;
+    right: 10%;
 }
 
+.footer-details-container{
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding-bottom: 35px;
+}
+.footer-details{
+    position: absolute;
+    top: 300%;
+    right: 7%;
+}
+.copy-container{
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding-bottom: 35px;
+}
+.copy{
+    position: absolute;
+    top: 180%;
+    right: 15%;
+}
 .wave-foot {
     font-size: 6rem;
     font-weight: 700;
@@ -643,11 +699,6 @@ main {
     font-weight: 700;
     color: #fff;
 }
-.bg-foot-img img{
-    width: 100%;
-    object-fit: cover;
-    display: block;
-}
 
 .footer-details{
     align-items: center;
@@ -656,29 +707,22 @@ main {
     font-size: 1rem;
     font-weight: 400;
     gap: 40px;
+    max-width: 545px;
 }
 
-.footer-details-container{
-    position: relative;
-}
-
-.footer-details{
-    position: absolute;
-    top: -195px;
-    right: 530px;
-}
-
-.spotify-2, .apple, .youtube, .twitter{
+.spotify-2,
+.apple, 
+.youtube, 
+.twitter{
     gap: 8px;
 }
 .copy{
     color: #fff;
 }
-.copy-container{
-    position: relative;
-}
-.copy{
-    position: absolute;
-    top: -130px;
-    right: 600px;
+
+/* responsive */
+/* small devices */
+
+@media screen and (max-width: 576px) {
+   
 }
